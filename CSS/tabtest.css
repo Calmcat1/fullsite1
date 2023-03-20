@@ -1,0 +1,194 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0 0 0 0;
+}
+
+p,h1{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button{
+  padding: 6px 17px 6px 17px;
+  font-family: roboto;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-radius: 15px;
+  background-color: transparent;
+
+}
+
+span{
+  font-weight: normal;
+}
+
+.tabcontent{
+  padding-top: 50px;
+  display: none;
+  font-family: roboto;
+  font-weight: lighter;
+  color: white;
+  height: 100vh;
+  padding-left: 20px;
+  font-size: 20px;
+  background-image: url(https://i.ytimg.com/vi/gDkPY-3A3Eg/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.tablinks{
+  padding: 6px 17px 5px 17px;
+  color: black;
+  border-color: black;
+  border-radius: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  border-color: transparent;
+ 
+  
+  
+}
+
+
+
+
+.maincontainer{
+  position: relative;
+  z-index: 1;
+  display:  flex;
+  flex-direction: column;
+ 
+  
+ 
+  
+}
+
+#home .content2{
+  position: relative;
+  z-index: 1;
+  padding-top: 250px;
+}
+
+#nav{
+ display: none;
+}
+
+.menus{
+  width: 75px;
+}
+
+#sidenavcontent, #openbtn{
+  display: none;
+}
+
+
+
+@media only screen and (max-width:425px){
+ .tabcontent{
+  height: auto;
+ }
+
+ #linkcontrol{
+  display: none
+ }
+
+ #nav{
+  position: relative;
+  z-index: 2;
+  display: block;
+  float: left;
+
+ }
+
+ #navcontent{
+  
+  height: 200px;
+  position: relative;
+  z-index: 3;
+  display: block;
+  float: left;
+  background-color: white;
+ }
+
+
+  #sidenavcontent{
+    
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Roboto;
+    width: 0;
+    font-size: 30px;
+    height: 100vh;
+    background-color: black;
+    transition: 0.4s width;
+    
+    
+  }
+  
+  #sidenavcontent a{
+
+    text-decoration: none;
+    color: white;
+    padding: 8px 8px 8px 32px;
+    
+  
+  }
+  
+  #sidenavcontent a:active, .closebtn:active{
+    opacity: 0.6;
+   
+  }
+  
+  #openbtn{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top: 8px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+   
+    
+    
+  }
+  
+  
+  
+  #closebtn{
+    
+    display:block;
+    position: relative;
+    left: 175px;
+    display: none;
+  }
+  
+  #sidenavcontent a, #openbtn, .closebtn{
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  #main{
+    width: 100vw;
+    height: 100vh;
+    transition: 0.4s background-color;
+  
+  }
+
+  .links{
+    display: none;
+  }
+ }
